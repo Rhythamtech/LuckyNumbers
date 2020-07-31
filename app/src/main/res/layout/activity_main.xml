@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Luckie Number's "
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/bg_png">
+<TextView
+    android:layout_width="106dp"
+    android:id="@+id/no1"
+    android:layout_height="174dp"
+    android:layout_marginBottom="13dp"
+    android:layout_marginTop="13dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginLeft="6dp"
+    android:text="0"
+    android:textSize="120dp"
+    android:gravity="center" />
+        <TextView
+            android:id="@+id/no2"
+            android:layout_width="106dp"
+            android:layout_height="174dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="0"
+            android:textSize="120dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/no3"
+            android:layout_width="106dp"
+            android:layout_height="174dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="6dp"
+            android:text="0"
+            android:textSize="120dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/result"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="  Win!  "
+        android:textColor="#D8C128"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/Luckbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/Luckbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D8C128"
+        android:padding="10dp"
+        android:text="Try your Luck"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
