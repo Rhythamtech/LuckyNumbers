@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         int num2 = RandNo.nextInt(9)+1;
         int num3 = RandNo.nextInt(9)+1;
 
-        if((num1 == num2)==(num2==num3))
+        if((num1 == num2)&&(num2==num3))
         {
             result.setText("  Win!!  ");
         }
